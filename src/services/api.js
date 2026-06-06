@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || process.env.REACT_APP_API_URL || "http://localhost:3001"
+    baseURL: 'https://devburguer-api-1.onrender.com'
 });
 
 api.interceptors.request.use((config) => {
@@ -11,7 +11,7 @@ api.interceptors.request.use((config) => {
         const token = JSON.parse(userData).token;
 
         if (token) {
-            config.headers.Authorization = `Bearer ${token}`;
+            config.headers.authorization = `Bearer ${token}`;
         }
     }
 
