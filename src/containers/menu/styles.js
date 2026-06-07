@@ -40,24 +40,6 @@ export const Banner = styled.div`
         color: #fff;
         font-size: 20px;
     }
-
-    @media (max-width: 768px) {
-        height: 300px;
-
-        h1 {
-            font-size: 42px;
-            right: 50%;
-            transform: translateX(50%);
-            top: 35%;
-            text-align: center;
-            width: 100%;
-        }
-
-        span {
-            font-size: 16px;
-            margin: 10px 0;
-       }
-    }
 `
 
 export const CategoryMenu = styled.div`
