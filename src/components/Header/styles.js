@@ -83,7 +83,7 @@ export const Profile = styled.div`
         display: none;
     }
 
-    span {
+    p {
         color: ${props => props.theme.purple};
     }
 
