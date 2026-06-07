@@ -7,6 +7,10 @@ export const Container = styled.div`
     display: flex;
     height: 100vh;
     width: 100vw;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const LeftContainer = styled.div`
@@ -25,6 +29,15 @@ export const LeftContainer = styled.div`
     img {
         width: 55%;
     }
+
+    @media (max-width: 768px) {
+    max-width: 100%;
+    height: 250px;
+
+    img {
+        width: 180px;
+    }
+}
 `;
 
 export const RightContainer = styled.div`
@@ -49,6 +62,11 @@ export const RightContainer = styled.div`
     a {
         text-decoration: underline;
     }    
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 20px;
+    }
 `;
 
 export const Title = styled.div`

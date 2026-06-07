@@ -51,6 +51,11 @@ export const CategoryMenu = styled.div`
     width: 100%;
     max-width: 1280px;
     margin-top: 30px; 
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 `
 
 export const CategoryButton = styled(Link)`
@@ -66,6 +71,9 @@ export const CategoryButton = styled(Link)`
     border: none;
     border-bottom: ${(props) => props.$isActiveCategory && '3px solid #9758A6'};
     
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 `
 
 export const ProductsContainer = styled.div`
@@ -76,5 +84,14 @@ export const ProductsContainer = styled.div`
     max-width: 1280px;
     padding: 40px;
     margin: 50px auto 0;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 `
 

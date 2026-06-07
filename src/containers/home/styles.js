@@ -2,11 +2,12 @@ import styled from "styled-components";
 import BannerHome from "../../assets/banner-home.svg";
 import Background from "../../assets/background.svg";
 
-export const Banner = styled.div `
+export const Banner = styled.div`
     background: url(${BannerHome});
     background-size: cover;
     background-position: center;
     height: 480px;
+    position: relative;
 
     h1 {
         font-family: 'Road Rage', sans-serif;
@@ -16,9 +17,27 @@ export const Banner = styled.div `
         right: 20%;
         top: 10%;
     }
-`
 
-export const Container = styled.section `
+    @media (max-width: 768px) {
+        height: 300px;
+
+        h1 {
+            font-size: 42px;
+            text-align: center;
+            right: 0;
+            left: 0;
+            top: 25%;
+        }
+
+        span {
+            font-size: 16px;
+            margin: 10px 0;
+       }
+
+    }
+`;
+
+export const Container = styled.section`
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
     url(${Background});
 `

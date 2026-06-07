@@ -79,7 +79,7 @@ export function Orders() {
                     </FilterOption>
                 ))}
             </Filter>
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{ overflow: 'auto' }}>
                 <Table aria-label="collapsible table">
                     <TableHead>
                         <TableRow>

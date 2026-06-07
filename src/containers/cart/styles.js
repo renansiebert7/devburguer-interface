@@ -52,4 +52,9 @@ export const Content = styled.div`
     max-width: 1280px;
     padding: 40px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 `;

@@ -9,6 +9,11 @@ export const ProductImage = styled.img`
   height: 80px;
   padding: 12px;
   border-radius: 16px;
+
+  @media (max-width: 768px) {
+    height: 60px;
+    padding: 6px;
+  }
 `;
 
 export const SelectStatus = styled(select)`
@@ -21,6 +26,13 @@ export const Filter = styled.div`
   justify-content: center;
   margin: 28px 0;
   gap: 50px;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 15px;
+    gap: 20px;
+  }
 `;
 
 export const FilterOption = styled.button`
@@ -32,4 +44,5 @@ export const FilterOption = styled.button`
   font-size: 18px;
   line-height: 20px;
   padding-bottom: 5px;
+  white-space: nowrap;
 `;

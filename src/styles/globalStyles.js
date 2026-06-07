@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
   button, a {
     cursor: pointer;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `
 
 export default GlobalStyle
