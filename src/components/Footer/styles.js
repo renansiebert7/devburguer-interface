@@ -15,7 +15,8 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-        font-size: 14px;
+        font-size: 10px;
         padding: 16px;
+        text-align: center;
     }
 `;
