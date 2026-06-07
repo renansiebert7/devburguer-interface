@@ -29,6 +29,15 @@ export const LeftContainer = styled.div`
     img {
         width: 55%;
     }
+
+    @media (max-width: 768px) {
+    max-width: 100%;
+    height: 250px;
+
+    img {
+        width: 180px;
+    }
+}
 `;
 
 export const RightContainer = styled.div`
@@ -53,6 +62,11 @@ export const RightContainer = styled.div`
     a {
         text-decoration: underline;
     }    
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 20px;
+    }
 `;
 
 export const Title = styled.div`
