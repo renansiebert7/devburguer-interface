@@ -90,6 +90,10 @@ export const Profile = styled.div`
 
         .user-info {
             display: none;
+
+            span {
+                color: ${props => props.theme.purple};
+            }
         }
 
         .mobile-logout {
