@@ -6,6 +6,10 @@ export const Container = styled.div`
     width: 100%;
     height: 72px;
     padding: 0 56px;
+
+    @media (max-width: 768px) {
+        padding: 10px 15px;
+    }
 `
 
 export const Content = styled.div`
@@ -16,18 +20,13 @@ export const Content = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 72px;
 
     @media (max-width: 768px) {
-        flex-wrap: wrap;
+        padding: 0;
         gap: 10px;
-        padding: 10px;
-
-        nav {
-            width: 100%;
-            justify-content: center;
-        }
-}
-`
+    }
+`;
 
 export const Navigation = styled.nav`
     display: flex;
@@ -46,11 +45,15 @@ export const Navigation = styled.nav`
         height: 24px;
         border: 1px solid #625e5e;
     }
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
 
 export const HeaderLink = styled(Link)`
-    color: ${(props) => props.$isActive ? (props) => props.theme.purple : props.theme.white};
-    border-bottom: ${(props) => props.$isActive ? `1px solid ${(props) => props.theme.purple}` : 'none'};
+    color: ${(props) => props.$isActive ? props.theme.purple : props.theme.white};
+    border-bottom: ${(props) => props.$isActive ? `1px solid ${props.theme.purple}` : 'none'};
     padding-bottom: 5px;
     text-decoration: none;
     font-size: 14px;
@@ -64,15 +67,17 @@ export const HeaderLink = styled(Link)`
 export const Options = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 48px;
-`
+    gap: 15px;
+
+    @media (max-width: 768px) {
+        gap: 12px;
+    }
+`;
 
 export const Profile = styled.div`
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 14px;
 
     p {
         color: #fff;
@@ -85,17 +90,35 @@ export const Profile = styled.div`
         }
     }
 
+    .mobile-logout {
+        display: none;
+    }
+
     @media (max-width: 768px) {
-        span {
-            font-size: 12px;
+        .user-info {
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
+
+        .mobile-logout {
+            display: block;
         }
     }
-`
+`;
 
 export const LinkContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: 768px) {
+        .cart-text {
+            display: none;
+        }
+    }
 `
 
 export const Logout = styled.button`

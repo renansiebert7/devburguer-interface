@@ -33,14 +33,14 @@ export function Header() {
                 <Options>
                     <Profile>
                         <UserCircle color="#000000" size={24} />
-                        <div>
+                        <div className="user-info">
                             <p>Olá, <span>{user.name}</span></p>
-                            <Logout onClick={logoutUser}>Sair</Logout>
+                            <Logout className="mobile-logout" onClick={logoutUser}>Sair</Logout>
                         </div>
                     </Profile>
                     <LinkContainer>
                     <ShoppingCart color="#000000" size={24} />
-                    <HeaderLink to="/carrinho">
+                    <HeaderLink className="cart-text" to="/carrinho">
                         Carrinho
                     </HeaderLink>
                 </LinkContainer>
