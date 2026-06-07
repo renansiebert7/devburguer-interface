@@ -30,6 +30,12 @@ export const Title = styled.h2`
         height: 4px;
         background-color: #9758a6;
     }
+
+    @media (max-width: 768px) {
+        font-size: 24px; 
+        margin-bottom: 25px; 
+        margin-top: 15px;
+    }
 `;
 
 export const ContainerItems = styled.div`

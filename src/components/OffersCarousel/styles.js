@@ -13,6 +13,15 @@ export const Container = styled.div`
 
     padding-left: 40px;
     padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+        padding-left: 15px; 
+        padding-bottom: 20px;
+
+        .carousel-item {
+            padding-right: 15px;
+        }
+    }
 `;
 
 export const Title = styled.h2`
@@ -33,5 +42,11 @@ export const Title = styled.h2`
         width: 56px;
         height: 4px;
         background-color: #61A120;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 24px; 
+        margin-top: 25px;
+        margin-bottom: 40px; 
     }
 `;
