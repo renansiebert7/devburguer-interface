@@ -87,6 +87,10 @@ export const Profile = styled.div`
         color: ${props => props.theme.purple};
     }
 
+    span {
+        color: ${props => props.theme.white};
+    }
+
     @media (max-width: 768px) {
         svg {
             display: none;
