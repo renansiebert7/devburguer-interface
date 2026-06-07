@@ -83,6 +83,10 @@ export const Profile = styled.div`
         display: none;
     }
 
+    span {
+        color: ${props => props.theme.purple};
+    }
+
     @media (max-width: 768px) {
         svg {
             display: none;
@@ -90,10 +94,6 @@ export const Profile = styled.div`
 
         .user-info {
             display: none;
-
-            span {
-                color: ${props => props.theme.purple};
-            }
         }
 
         .mobile-logout {
