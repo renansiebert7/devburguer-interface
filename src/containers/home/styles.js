@@ -23,17 +23,17 @@ export const Banner = styled.div`
 
         h1 {
             font-size: 42px;
+            right: 50%;
+            transform: translateX(50%);
+            top: 35%;
             text-align: center;
-            right: 0;
-            left: 0;
-            top: 25%;
+            width: 100%;
         }
 
         span {
             font-size: 16px;
             margin: 10px 0;
        }
-
     }
 `;
 

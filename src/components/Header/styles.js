@@ -16,6 +16,17 @@ export const Content = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+
+        nav {
+            width: 100%;
+            justify-content: center;
+        }
+}
 `
 
 export const Navigation = styled.nav`
@@ -71,6 +82,12 @@ export const Profile = styled.div`
         span {
             font-weight: 700;
             color: #9758a6;
+        }
+    }
+
+    @media (max-width: 768px) {
+        span {
+            font-size: 12px;
         }
     }
 `

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     .carousel-item {
-        padding-right: 40px;
+    padding-right: 12px;
     }
 
+    padding: 0 12px;
     margin-bottom: 50px;
-    padding-left: 40px;
     cursor: grab;
 `;
 
@@ -43,6 +43,10 @@ export const ContainerItems = styled.div`
     padding: 20px 10px;
     width: 100%;
     height: 250px;
+
+    @media (max-width: 768px) {
+        height: 220px;
+    }
 `;
 
 export const CategoryButton = styled(Link)`
@@ -57,5 +61,10 @@ export const CategoryButton = styled(Link)`
     
     &:hover {
         background-color: #9758a6;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        padding: 10px 30px;
     }
 `;
