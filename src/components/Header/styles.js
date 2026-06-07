@@ -92,14 +92,6 @@ export const Profile = styled.div`
 
 
     @media (max-width: 768px) {
-        .user-info {
-            display: none;
-        }
-
-        svg {
-            display: none;
-        }
-
         .mobile-logout {
             display: block;
         }
@@ -109,13 +101,9 @@ export const Profile = styled.div`
 export const LinkContainer = styled.div`
     display: flex;
     align-items: center;
-    gap: 10px;
-
-    @media (max-width: 768px) {
-        .cart-text {
-            display: none;
-        }
-    }
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
 `
 
 export const Logout = styled.button`

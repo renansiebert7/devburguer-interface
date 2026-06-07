@@ -59,36 +59,22 @@ export const CategoryMenu = styled.div`
 `
 
 export const CategoryButton = styled(Link)`
-    color: #fff;
-    background-color: rgba(0,0,0,0.55);
-
-    border-radius: 30px;
     text-decoration: none;
-
-    padding: 10px 14px;
-
-    max-width: 90%;
-
-    text-align: center;
-
-    font-size: 18px;
-    font-weight: bold;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    word-break: break-word;
-
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: ${(props) => props.$isActiveCategory ? '#9758A6' : '#696969'};
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    line-height: 20px;
+    border: none;
+    border-bottom: ${(props) => props.$isActiveCategory && '3px solid #9758A6'};
+    
     @media (max-width: 768px) {
-        font-size: 16px;
-        padding: 8px 12px;
+        font-size: 18px;
     }
-
-    &:hover {
-        background-color: #9758a6;
-    }
-`;
+`
 
 export const ProductsContainer = styled.div`
     display: grid;
