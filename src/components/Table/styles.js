@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Root = styled.table`
     width: 100%;
+    min-width: 650px;
     border-collapse: collapse;
     background-color: #fff;
     border-radius: 20px;
@@ -30,6 +31,11 @@ export const Th = styled.th`
     &:first-child {
     border-top-left-radius: 20px;
     }
+
+    @media (max-width: 768px) {
+        padding: 10px;
+        font-size: 12px;
+    }
 `;
 
 export const Td = styled.td`
@@ -37,6 +43,11 @@ export const Td = styled.td`
     color: #484848;
     font-weight: 500;
     line-height: 115%;
+
+    @media (max-width: 768px) {
+        padding: 8px;
+        font-size: 12px;
+    }
 `;
 
 export const Body = styled.tbody``;

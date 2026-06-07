@@ -4,6 +4,12 @@ export const ProductImage = styled.img`
     height: 80px;
     width: 80px;
     border-radius: 16px;
+
+    @media (max-width: 768px) {
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
 `
 
 export const ButtonGroup = styled.div`
@@ -25,6 +31,16 @@ export const ButtonGroup = styled.div`
 
         &:hover {
             background-color: #6f357c;
+        }
+    }
+
+    @media (max-width: 768px) {
+        gap: 6px;
+        font-size: 14px;
+
+        button {
+            height: 24px;
+            width: 24px;
         }
     }
 `

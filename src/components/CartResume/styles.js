@@ -8,6 +8,10 @@ export const Container = styled.div`
     justify-content: space-between;
     margin-bottom: 20px;
 
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+
     * {
         color: #484848;
         font-weight: 500;
@@ -15,7 +19,8 @@ export const Container = styled.div`
 
     .container-top {
         display: grid;
-        grid-gap: 10px 30%;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
         grid-template-areas: 
             'title title'
             'items items-price'
@@ -53,7 +58,7 @@ export const Container = styled.div`
                 grid-area: delivery-tax-price;
                 padding-right: 20px;
             }
-    }
+    }    
 
     .container-bottom {
         display: flex;
