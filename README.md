@@ -17,6 +17,26 @@ Atualmente o projeto foi desenvolvido e otimizado apenas para uso em computadore
 
 Versões responsivas para tablets e smartphones serão implementadas futuramente.
 
+## 🔑 Imagens do Projeto
+
+### Tela Home
+<img src="https://github.com/renansiebert7/devburguer-interface/blob/master/src/assets/WhatsApp%20Image%202026-06-06%20at%2000.49.15.jpeg?raw=true">
+
+### Tela do Cardápio
+<img src="https://github.com/renansiebert7/devburguer-interface/blob/master/src/assets/WhatsApp%20Image%202026-06-06%20at%2000.49.36.jpeg?raw=true">
+
+### Tela do Carrinho
+<img src="https://github.com/renansiebert7/devburguer-interface/blob/master/src/assets/WhatsApp%20Image%202026-06-06%20at%2000.50.07.jpeg?raw=true">
+
+### Tela Admin Pedidos
+<img src="https://github.com/renansiebert7/devburguer-interface/blob/master/src/assets/WhatsApp%20Image%202026-06-06%20at%2000.51.06.jpeg?raw=true">
+
+### Tela Admin Produtos
+<img src="https://github.com/renansiebert7/devburguer-interface/blob/master/src/assets/WhatsApp%20Image%202026-06-06%20at%2000.51.26.jpeg?raw=true">
+
+### Tela Admin Cadastro Produtos
+<img src="https://github.com/renansiebert7/devburguer-interface/blob/master/src/assets/WhatsApp%20Image%202026-06-06%20at%2000.51.48.jpeg?raw=true">
+
 ---
 
 ## 🔑 Acesso para Testes
