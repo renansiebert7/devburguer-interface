@@ -90,9 +90,6 @@ export const Profile = styled.div`
         }
     }
 
-    .mobile-logout {
-        display: none;
-    }
 
     @media (max-width: 768px) {
         .user-info {

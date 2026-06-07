@@ -39,13 +39,13 @@ export function Header() {
                         </div>
                     </Profile>
                     <LinkContainer>
-                    <ShoppingCart color="#000000" size={24} />
-                    <HeaderLink className="cart-text" to="/carrinho">
-                        Carrinho
-                    </HeaderLink>
-                </LinkContainer>
+                        <HeaderLink to="/carrinho">
+                            <ShoppingCart color="#000000" size={24} />
+                            <span className="cart-text">Carrinho</span>
+                        </HeaderLink>
+                    </LinkContainer>
                 </Options>
-                
+
             </Content>
         </Container>
     )
