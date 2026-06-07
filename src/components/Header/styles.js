@@ -79,32 +79,43 @@ export const Profile = styled.div`
     align-items: center;
     gap: 12px;
 
-    p {
-        color: #fff;
-        line-height: 90%;
-        font-weight: 300;
-
-        span {
-            font-weight: 700;
-            color: #9758a6;
-        }
+    .mobile-logout {
+        display: none;
     }
 
-
     @media (max-width: 768px) {
+        svg {
+            display: none;
+        }
+
+        .user-info {
+            display: none;
+        }
+
         .mobile-logout {
             display: block;
+            color: #ff3205;
+            background: transparent;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
         }
     }
 `;
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled(Link)`
     display: flex;
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    color: #fff;
-`
+    color: white;
+
+    @media (max-width: 768px) {
+        .cart-text {
+            display: none;
+        }
+    }
+`;
 
 export const Logout = styled.button`
     color: #ff3205;

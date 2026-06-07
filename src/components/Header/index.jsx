@@ -32,17 +32,28 @@ export function Header() {
                 </Navigation>
                 <Options>
                     <Profile>
-                        <UserCircle color="#000000" size={24} />
+                        <UserCircle color="#fff" size={24} />
+
                         <div className="user-info">
-                            <p>Olá, <span>{user.name}</span></p>
-                            <Logout className="mobile-logout" onClick={logoutUser}>Sair</Logout>
+                            <p>
+                                Olá, <span>{user.name}</span>
+                            </p>
+                            <Logout onClick={logoutUser}>
+                                Sair
+                            </Logout>
                         </div>
+                        <button
+                            className="mobile-logout"
+                            onClick={logoutUser}
+                        >
+                            Sair
+                        </button>
                     </Profile>
-                    <LinkContainer>
-                        <HeaderLink to="/carrinho">
-                            <ShoppingCart color="#000000" size={24} />
-                            <span className="cart-text">Carrinho</span>
-                        </HeaderLink>
+                    <LinkContainer to="/carrinho">
+                        <ShoppingCart color="#fff" size={24} />
+                        <span className="cart-text">
+                            Carrinho
+                        </span>
                     </LinkContainer>
                 </Options>
 
