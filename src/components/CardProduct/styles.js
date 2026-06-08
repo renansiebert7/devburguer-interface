@@ -9,14 +9,14 @@ export const Container = styled.div`
     background-color: #fff;
     
     width: 220px;
-    min-height: 340px;
+    min-height: 280px;
     margin: 60px auto 0 auto;
     
     cursor: grab;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
     box-sizing: border-box;
-    justify-content: flex-start; 
+    justify-content: space-between; 
     
     div {
         width: 100%;
@@ -45,7 +45,7 @@ export const Container = styled.div`
             color: #363636;
             font-weight: 800;
             line-height: 1.2;
-            margin-top: auto; 
+            margin-top: 20px; 
             margin-bottom: 15px; 
         }
     }
