@@ -16,8 +16,6 @@ export const Container = styled.div`
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
     box-sizing: border-box;
-
-    /* ALTERAÇÃO AQUI: Mudamos de space-between para flex-start */
     justify-content: flex-start; 
 
     div {
@@ -25,7 +23,6 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         text-align: center;
-        /* Reduzimos o gap interno da caixinha de texto/preço */
         gap: 6px; 
 
         p {
@@ -34,7 +31,7 @@ export const Container = styled.div`
             line-height: 1.3;
             font-weight: 700;
             margin-top: 65px; 
-            margin-bottom: 5px; /* Controla o espaço antes do preço */
+            margin-bottom: 5px; 
             
             display: -webkit-box;
             -webkit-line-clamp: 2; 
@@ -48,15 +45,8 @@ export const Container = styled.div`
             color: #363636;
             font-weight: 800;
             line-height: 1.2;
-            /* ADICIONADO: Uma margem inferior no preço dita o espaço exato até o botão */
-            margin-bottom: 20px; 
+            margin: 0;
         }
-    }
-
-    /* Se o seu CardButton não estiver colando, você pode forçar uma margem no topo dele */
-    button, a {
-        width: 100%;
-        margin-top: auto; /* Esse é o truque! Ele empurra o botão para baixo, mas respeita a margem do preço */
     }
 
     @media (max-width: 480px) {
@@ -77,7 +67,7 @@ export const Container = styled.div`
 
             strong {
                 font-size: 19px;
-                margin-bottom: 10px; /* Menos espaço no mobile */
+                margin-bottom: 10px; 
             }
         }
     }
@@ -98,4 +88,9 @@ export const CardImage = styled.img`
         top: -50px;
         left: calc(50% - 50px);
     }
+`;
+
+export const CardButton = styled.button`
+    width: 100%;
+    margin-top: auto; 
 `;

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import { Container, CardImage } from "./styles.js"
+import { Container, CardImage, CardButton } from "./styles.js"
 import { useCart } from "../../hooks/CartContext"
 import { CardButton } from "../CardButton"
 import { formatPrice } from "../../utils/formatPrice.js"
