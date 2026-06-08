@@ -89,7 +89,3 @@ export const CardImage = styled.img`
         left: calc(50% - 50px);
     }
 `;
-
-export const CardButton = styled.button`
-    width: 100%;
-`;
