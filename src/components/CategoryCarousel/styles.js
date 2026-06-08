@@ -46,7 +46,6 @@ export const ContainerItems = styled.div`
 
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 20px 10px;
     width: 100%;
     height: 250px;
@@ -55,6 +54,7 @@ export const ContainerItems = styled.div`
     @media (max-width: 768px) {
         height: 220px;
         padding: 15px 5px;
+        justify-content: center;
     }
 `;
 
