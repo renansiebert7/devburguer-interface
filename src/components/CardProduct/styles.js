@@ -18,12 +18,14 @@ export const Container = styled.div`
     box-sizing: border-box;
     justify-content: flex-start; 
 
+    /* --- ALTERAÇÃO ESSENCIAL NA DIV --- */
     div {
         width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 6px; 
+        flex-grow: 1; /* Força a div a ocupar toda a altura restante até o botão */
 
         p {
             font-size: 18px;
@@ -45,7 +47,8 @@ export const Container = styled.div`
             color: #363636;
             font-weight: 800;
             line-height: 1.2;
-            margin: 0;
+            margin-top: auto; /* A MÁGICA AQUI: Joga o preço para a base da div, colando no botão */
+            margin-bottom: 15px; /* Controla milimetricamente a distância exata dele até o botão */
         }
     }
 
@@ -67,7 +70,8 @@ export const Container = styled.div`
 
             strong {
                 font-size: 19px;
-                margin-bottom: 10px; 
+                margin-top: auto;
+                margin-bottom: 8px; /* Menor espaçamento para a tela do celular */
             }
         }
     }
@@ -92,5 +96,5 @@ export const CardImage = styled.img`
 
 export const CardButton = styled.button`
     width: 100%;
-    margin-top: auto; 
+    /* Removemos o margin-top: auto daqui, pois quem faz o empurrão agora é o strong */
 `;
