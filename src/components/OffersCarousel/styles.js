@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 1280px; /* Alerta: Impede o carrossel de esticar infinitamente no PC */
-    margin: 0 auto;    /* Centraliza o bloco inteiro na tela do computador */
+    max-width: 1280px; 
+    margin: 0 auto;    
     
     .carousel-item {
-        padding-right: 40px; /* Mantém um espaçamento elegante entre os cards no PC */
+        padding-right: 40px; 
     }
 
     overflow-x: hidden;
@@ -23,7 +23,7 @@ export const Container = styled.div`
         padding-bottom: 20px;
 
         .carousel-item {
-            padding-right: 15px; /* Mantém o ajuste que salvou seu mobile */
+            padding-right: 15px; 
         }
     }
 `;
