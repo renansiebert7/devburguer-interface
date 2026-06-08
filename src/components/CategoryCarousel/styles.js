@@ -32,7 +32,7 @@ export const Title = styled.h2`
     }
 
     @media (max-width: 768px) {
-        font-size: 18px; 
+        font-size: 24px; 
         margin-bottom: 25px; 
         margin-top: 15px;
     }
@@ -46,12 +46,15 @@ export const ContainerItems = styled.div`
 
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px 10px;
     width: 100%;
     height: 250px;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
         height: 220px;
+        padding: 15px 5px;
     }
 `;
 
@@ -62,7 +65,9 @@ export const CategoryButton = styled(Link)`
     border-radius: 30px;
     font-size: 22.5px;
     font-weight: bold;
-    margin-top: 25px;
+    text-align: center;
+    width: max-content;
+    max-width: 90%;
     text-decoration: none;
     
     &:hover {
@@ -70,7 +75,7 @@ export const CategoryButton = styled(Link)`
     }
 
     @media (max-width: 768px) {
-        font-size: 18px;
-        padding: 10px 30px;
+        font-size: 15px;
+        padding: 8px 14px;
     }
 `;
