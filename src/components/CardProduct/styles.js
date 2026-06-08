@@ -8,41 +8,42 @@ export const Container = styled.div`
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
+    
     width: 100%;
-    min-height: 280px; /* Garante uma altura mínima para manter os cards alinhados */
+    max-width: 280px; 
+    margin: 50px auto 0 auto; 
+    
+    min-height: 320px; 
     cursor: grab;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px; /* Deixei a sombra um pouco mais suave */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     position: relative;
-    margin-top: 50px; /* Cria o espaço necessário no topo para a imagem absoluta respirar */
     box-sizing: border-box;
-    justify-content: space-between; /* Empurra o botão da sacola sempre para o final do card */
+    justify-content: space-between;
 
     div {
         width: 100%;
-        /* REMOVIDO: height: 80px fixo foi embora */
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-bottom: 10px;
-        text-align: center; /* Centraliza melhor os textos do produto */
+        text-align: center;
 
         p {
             font-size: 18px;
             color: #FF8C05;
             line-height: 1.3;
             font-weight: 700;
-            margin-top: 50px; /* Mantém o espaço para a imagem flutuante */
+            margin-top: 50px; 
             
-            /* Evita que nomes gigantes destruam o layout */
             display: -webkit-box;
-            -webkit-line-clamp: 2; /* Limita em até 2 linhas */
+            -webkit-line-clamp: 2; 
             -webkit-box-orient: vertical;
             overflow: hidden;
-            min-height: 46px; /* Mantém o mesmo alinhamento mesmo para nomes de uma linha só */
+            min-height: 46px; 
         }
 
         strong {
-            font-size: 22px; /* Reduzido levemente de 24px para encaixar melhor no mobile */
+            font-size: 22px;
             color: #363636;
             font-weight: 800;
             line-height: 1.2;
@@ -50,12 +51,13 @@ export const Container = styled.div`
     }
 
     @media (max-width: 480px) {
+        max-width: 100%; 
         padding: 15px 10px;
         min-height: 250px;
 
         div {
             p {
-                font-size: 15px; /* Fonte menor para telas de celulares pequenos */
+                font-size: 15px;
                 margin-top: 45px;
                 min-height: 40px;
             }
@@ -69,10 +71,10 @@ export const Container = styled.div`
 
 export const CardImage = styled.img`
     height: 100px;
-    width: 100px; /* Definir largura fixa junto com a altura evita distorções */
+    width: 100px; 
     object-fit: cover;
     position: absolute;
     top: -50px;
-    left: calc(50% - 50px); /* Garante que a imagem fique perfeitamente centralizada na horizontal */
-    border-radius: 50%; /* Garante um círculo perfeito */
+    left: calc(50% - 50px); 
+    border-radius: 50%; 
 `;
