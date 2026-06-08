@@ -81,7 +81,7 @@ export default function CheckoutForm() {
     }
 
     return (
-        <div className="container">
+        <div className="stripe-form-wrapper"> {/* Alterado aqui para evitar conflitos */}
             <form id="payment-form" onSubmit={handleSubmit}>
 
                 <PaymentElement id="payment-element" options={paymentElementOptions} />
@@ -90,7 +90,6 @@ export default function CheckoutForm() {
                         {isLoading ? <div className="spinner" id="spinner"></div> : "Pagar agora"}
                     </span>
                 </button>
-                {/* Show any error or success messages */}
                 {message && <div id="payment-message">{message}</div>}
             </form>
         </div>
