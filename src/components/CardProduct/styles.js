@@ -17,13 +17,12 @@ export const Container = styled.div`
     position: relative;
     box-sizing: border-box;
     justify-content: flex-start; 
-
+    
     div {
         width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 6px; 
         flex-grow: 1; 
 
         p {
@@ -32,7 +31,7 @@ export const Container = styled.div`
             line-height: 1.3;
             font-weight: 700;
             margin-top: 65px; 
-            margin-bottom: 5px; 
+            margin-bottom: 10px; 
             
             display: -webkit-box;
             -webkit-line-clamp: 2; 
@@ -58,13 +57,11 @@ export const Container = styled.div`
         margin-top: 50px;
 
         div {
-            gap: 4px;
-
             p {
                 font-size: 15px;
                 margin-top: 45px;
                 min-height: 40px;
-                margin-bottom: 2px;
+                margin-bottom: 5px;
             }
 
             strong {
