@@ -66,7 +66,6 @@ export const Container = styled.div`
 
             strong {
                 font-size: 19px;
-                margin-top: auto;
                 margin-bottom: 8px; 
             }
         }
