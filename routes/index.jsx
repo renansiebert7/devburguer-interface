@@ -4,13 +4,13 @@ import { AdminLayout } from "../src/layout/AdminLayout";
 import { Home, Login, Register, Menu, Cart, CompletePayment, Checkout, Orders, NewProduct, EditProduct, Products } from "../src/containers";
 import { UserLayout } from "../src/layout/UserLayout";
 
+import { PrivateRoute } from "../src/components/PrivateRoute";
+
 export function Router() {
     return (
         <Routes>
 
-            <Route path="/login" element={<Login />} />
-            <Route path="/cadastro" element={<Register />} />
-
+            {/* Rotas protegidas do usuário */}
             <Route element={<PrivateRoute />}>
                 <Route path="/" element={<UserLayout />}>
                     <Route index element={<Home />} />
@@ -19,7 +19,10 @@ export function Router() {
                     <Route path="checkout" element={<Checkout />} />
                     <Route path="complete-payment" element={<CompletePayment />} />
                 </Route>
+            </Route>
 
+            {/* Rotas protegidas do admin */}
+            <Route element={<PrivateRoute />}>
                 <Route path="/admin" element={<AdminLayout />}>
                     <Route path="pedidos" element={<Orders />} />
                     <Route path="novo-produto" element={<NewProduct />} />
@@ -27,6 +30,10 @@ export function Router() {
                     <Route path="produtos" element={<Products />} />
                 </Route>
             </Route>
+
+            {/* Rotas públicas */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/cadastro" element={<Register />} />
 
         </Routes>
     );

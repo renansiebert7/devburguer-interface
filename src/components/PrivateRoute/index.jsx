@@ -1,7 +1,8 @@
 import { Navigate, Outlet } from "react-router-dom";
+import { getUserLocalStorage } from "../services/localStorage";
 
 export function PrivateRoute() {
-    const token = localStorage.getItem("devburguer:token");
+    const user = getUserLocalStorage();
 
-    return token ? <Outlet /> : <Navigate to="/login" replace />;
+    return user ? <Outlet /> : <Navigate to="/login" />;
 }
