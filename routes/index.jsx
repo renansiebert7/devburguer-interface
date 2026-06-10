@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { AdminLayout } from "../src/layout/AdminLayout";
 import { Home, Login, Register, Menu, Cart, CompletePayment, Checkout, Orders, NewProduct, EditProduct, Products } from "../src/containers";
 import { UserLayout } from "../src/layout/UserLayout";
-import { PrivateRoute } from "../src/components/PrivateRoute/index";
+import { PrivateRoute } from "../src/components/PrivateRoute";
 
 export function Router() {
     return (
