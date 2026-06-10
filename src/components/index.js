@@ -10,3 +10,4 @@ export * from './CartItems';
 export * from './CartResume';
 export * from './Stripe/CheckoutForm';
 export * from './SideNavAdmin';
+export * from './PrivateRoute'; 
