@@ -10,7 +10,6 @@ export function Router() {
     return (
         <Routes>
 
-            {/* Rotas protegidas do usuário */}
             <Route element={<PrivateRoute />}>
                 <Route path="/" element={<UserLayout />}>
                     <Route index element={<Home />} />
@@ -21,7 +20,6 @@ export function Router() {
                 </Route>
             </Route>
 
-            {/* Rotas protegidas do admin */}
             <Route element={<PrivateRoute />}>
                 <Route path="/admin" element={<AdminLayout />}>
                     <Route path="pedidos" element={<Orders />} />
@@ -31,7 +29,6 @@ export function Router() {
                 </Route>
             </Route>
 
-            {/* Rotas públicas */}
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Register />} />
 
