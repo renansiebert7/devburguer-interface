@@ -181,4 +181,4 @@ https://www.linkedin.com/in/renansiebert/
 
 ---
 
-⭐ Projeto desenvolvido para fins de estudo, prática e evolução no desenvolvimento Full Stack.
+⭐ Projeto desenvolvido para fins de estudo, prática e evolução no desenvolvimento Full Stack...
